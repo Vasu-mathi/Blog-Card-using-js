@@ -1,0 +1,50 @@
+body {
+  padding: 32px;
+  margin: 0 auto;
+  text-align: center;
+  /* align-items: center; */
+}
+
+h3 {
+  color: rgb(209, 115, 115);
+  margin-bottom: 0 auto;
+}
+h2 {
+  margin-top: 0;
+}
+
+.container {
+  width: 1200px;
+  display: flex;
+  gap: 40px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card {
+  width: 340px;
+  border: 1px solid lightgray;
+  border-radius: 1px;
+}
+
+.card-content {
+  padding: 24px;
+  width: 85%;
+  text-align: left;
+}
+.card-img {
+  width: 100%;
+}
+
+.btn {
+  color: black;
+  text-decoration: none;
+  font: normal 16px/1 "system-ui";
+  text-transform: uppercase;
+}
+
+
+
+.d-n,#text{
+    display: none;
+}

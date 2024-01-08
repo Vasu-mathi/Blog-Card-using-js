@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <script>
+      function readMore(id, rm, rl) {
+        document.getElementById(id).style.display = "flex";
+        document.getElementById(rm).style.display = "none";
+        document.getElementById(rl).style.display = "flex";
+      }
+      function readLess(id, rl, rm) {
+        document.getElementById(id).style.display = "none";
+        document.getElementById(rm).style.display = "flex";
+        document.getElementById(rl).style.display = "none";
+      }
+      </script>
+    
+    <h3>My Recent Post</h3>
+    <h1>My Blog</h1>
+    <div class="container">
+     
+
+      <div class="card">
+        <img
+          class="card-img"
+          src="https://source.unsplash.com/1600x1000/?candy"alt=""/>
+        <div class="card-content">
+          <h3>18 july 2021 / web Design</h3>
+          <h2>What Has Happened of all of the web Design Ideas?</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+            magni commodi repellat laudantium error vero ullam.
+          </p>
+          <p id="card-text-1" class="d-n">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <a id="rm1" class="btn" onclick="readMore('card-text-1','rm1','rl1')"
+            >Read more</a
+          >
+          <a
+            id="rl1"
+            class="btn d-n"
+            onclick="readLess('card-text-1','rl1','rm1' )"
+            >Read less</a>
+        </div>
+      </div>
+      
+      <div class="card">
+        <img
+          class="card-img"
+          src="https://source.unsplash.com/1600x1000/?coffe"
+          alt=""
+        />
+        <div class="card-content">
+          <h3>18 july 2021 / web Design</h3>
+          <h2>What Has Happened of all of the web Design Ideas?</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut facere
+            consectetur repudiandae porro, nostrum velit maiores?
+          </p>
+          <p id="card-text-2" class="d-n">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <a id="rm2" class="btn" onclick="readMore('card-text-2','rm2','rl2')"
+            >Read more</a
+          >
+          <a
+            id="rl2"
+            class="btn d-n"
+            onclick="readLess('card-text-2','rl2','rm2' )"
+            >read less</a
+          >
+        </div>
+      </div>
+      <div class="card">
+        <img
+          class="card-img"
+          src="https://source.unsplash.com/1600x1000/?shoe"
+          alt=""
+        />
+        <div class="card-content">
+          <h3>18 july 2021 / web Design</h3>
+          <h2>What Has Happened of all of the web Design Ideas?</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut facere
+            consectetur repudiandae porro, nostrum velit maiores?
+          </p>
+          <p id="card-text-3" class="d-n">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+          </p>
+          <a id="rm3" class="btn" onclick="readMore('card-text-3','rm3','rl3')"
+            >Read more</a
+          >
+          <a
+            id="rl3"
+            class="btn d-n"
+            onclick="readLess('card-text-3','rl3','rm3' )"
+            >read less</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
